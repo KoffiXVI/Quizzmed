@@ -1,0 +1,140 @@
+@import "styles.css";
+
+.main_content .subject_container{
+	/*border: 2px solid red;*/
+	margin: 0 auto;
+}
+
+.subject_container ul {
+    list-style-type: none;
+    margin: 0 auto; 
+    /*border: 2px solid blue;*/
+    display: flex; 
+    padding: 10px 0;
+}
+
+.subject_container h1 {
+	font-size: 20px;
+	margin: 0 auto;
+    text-align: center;
+    text-decoration: underline;
+    padding: none;
+    margin: none;
+}
+
+.subject_container li{
+    margin: 0 auto; 
+}
+
+.subject_container li button{
+    background-color: orange;
+    border: 2px solid green;
+    width: 100px;
+    height: 50px;
+}
+
+.subject_container li button:hover {
+    background-color: green;
+}
+
+.main_content .session_zone{
+	overflow: scroll;
+	height: 60vh;
+	min-height: max-content;
+	text-align: center;
+	margin: 0 auto;
+	/*border: 2px solid brown;*/
+}
+
+.session_zone #zone_1{
+	margin: 0 auto;
+	/*border: 2px solid green;*/
+}
+
+#zone_1 h1{
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: 2px solid black;
+}
+
+.session_zone #zone_2{
+	width: 90%;
+	margin: 0 auto;
+	/*border: 2px solid red;*/
+}
+
+.session_zone #zone_2 div{
+	/*border: 2px solid purple;*/
+}
+
+.session_zone #zone_2 #propositions{
+	text-align: left;
+	display: table-row;
+}
+
+.session_zone #zone_2 #additions img{
+	max-height: 500px;
+	width: auto;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.session_zone #zone_2 #correction p{
+	text-align: justify;
+}
+
+.session_zone #zone_2 #correction h1{
+	text-align: center;
+}
+
+.session_zone #zone_3{
+	margin: 0 auto;
+	border: 20px solid greenyellow;
+}
+
+.overlay {
+    position: fixed; /* Make it fixed to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 9999; /* High z-index to appear on top */
+    display: none; /* Center content inside */
+    align-items: center;
+    justify-content: center;
+    color: black; /* Text color for overlay content */
+    font-size: 2rem;
+}
+
+.overlay div{
+	min-width: 300px;
+	height: max-content;
+	text-align: center;
+	background-color: lightgrey;
+	border: 3px solid darkslategray;
+}
+
+.main_content .overlay .subject_container ul {
+    list-style-type: none;
+    margin: 0 auto; 
+    /*border: 2px solid blue;*/
+    display: flex; 
+}
+
+.main_content .overlay .subject_container li{
+    margin: 0 auto; 
+}
+
+.main_content .overlay .subject_container li button{
+    background-color: orange;
+    border: 2px solid green;
+    }
+
+.main_content .overlay .subject_container li button:hover {
+    background-color: green;
+}
+
+
+

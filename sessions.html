@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Quizzmed</title>
+		<link rel="icon" type="image/ico" href="images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="CSS/stylesquizzmed.css">
+	</head>
+	<body>
+
+		<header class="header notranslate"> <!-- Top of the page -->
+			<h1>Quizzmed</h1>
+		</header>
+
+		<nav class="navbar notranslate"> <!-- Used to display the basic links in the home page -->
+			<ul class="nav-list">
+				<li><a href="index.html" target="_self">Accueil</a></li>
+				<li><a href="" target="_self">S'entraîner</a></li>
+				<!--<li><a href="comprendre.html" target="_self">FAQ</a></li>-->
+				<li><a href="contact.html" target="_self">Contact</a></li>
+
+				<label class="switch">
+				  <input type="checkbox" id="switch-input">
+				  <span class="slider round"></span>
+				</label>
+			</ul>
+		</nav>
+
+		<div class="main_content">
+			<article class="art_1">
+				<h1>S'entraîner</h1>
+				<p>Choisissez un sujet parmi les différentes sections pour vous entraîner</p>
+			</article>
+
+			<article class="subject_container">
+				<ul>
+					<li><a href="Matières/biochimie.html" target="_self"><button>Biochimie</button></a></li>
+					<li><a href="Matières/anatomie.html" target="_self"><button>Anatomie</button></a></li>
+					<li><a href="Matières/biocell.html" target="_self"><button>Biologie Cellulaire</button></a></li>
+				</ul>
+				<!--
+				<ul>
+					<li><a href="Matières/SHS.html" target="_self"><button>SHS</button></a></li>
+					<li><a href="Matières/Chimie.html" target="_self"><button>Chimie</button></a></li>
+					<li><a href="Matières/Nutrition.html" target="_self"><button>Nutrition</button></a></li>
+				</ul>
+				-->
+				<ul>
+					<li><a href="Matières/hasard.html" target="_self"><button>Hasard</button></a></li>
+				</ul>
+
+			</article>
+
+			<button id="scrollButton"><p class="arrow-up"></p></button>
+		</div>
+
+		<footer class="footer">
+			<p>© Koffi Karl</p>
+		</footer>
+		<script src="JS/scripts.js"></script>
+	<body>
+</html>
