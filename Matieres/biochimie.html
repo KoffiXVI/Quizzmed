@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Quizzmed</title>
+		<link rel="icon" type="image/ico" href="../Images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../CSS/stylesquizzmed.css">
+	</head>
+	 
+	<body>
+
+		<header class="header notranslate"> <!-- Top of the page -->
+			<h1>Quizzmed</h1>
+		</header>
+
+		<nav class="navbar notranslate"> <!-- Used to display the basic links in the home page -->
+			<ul class="nav-list">
+				<li><a href="../index.html" target="_self">Accueil</a></li>
+				<li><a href="../sessions.html" target="_self">S'entraîner</a></li>
+				<!--<li><a href="../comprendre.html" target="_self">FAQ</a></li>-->
+				<li><a href="../contact.html" target="_self">Contact</a></li>
+
+				<label class="switch">
+				  <input type="checkbox" id="switch-input">
+				  <span class="slider round"></span>
+				</label>
+			</ul>
+		</nav>
+
+		<div class="main_content">
+
+			<div class="session_zone" subject="biochimie">
+
+				<div id="zone_1">
+					<h1 id="QST_NBR">Biochimie</h1>
+				</div>
+
+				<!--Zone used to display questions-->
+				
+				<div id="zone_2">
+
+					<div id="description">
+						<p>Vérifiez votre maîtrise des procédés chimiques et biologiques</p>
+					</div>
+
+					<div id="additions">
+						
+					</div>
+
+					<div id="propositions">
+						
+					</div>
+
+					<div id="correction">
+
+						
+					</div>
+				</div>
+				
+			</div>
+
+			<!--Zone used to store buttons-->
+			<div id="zone_3">
+				<article class="subject_container">
+					<ul>
+						<li id="button_1"></li>
+						<li id="button_2"></li>
+						<li id="button_3"></li>
+					</ul>
+				</article>
+			</div>
+
+			<!--Overlay used to display if the player decides to give up on the test-->
+			<div id="giveup" class="overlay">
+				<div>
+					<article class="subject_container">
+						<h1>Souhaitez-vous quitter?</h1>
+					<ul>
+						<li><a href="../sessions.html" target="_self"><button>Oui</button></a></li>
+						<li><button onclick="giveup(`deactivate`)">Non</button></li>
+					</ul>
+				</article>
+				</div>
+		    </div>
+
+			<button id="scrollButton"><p class="arrow-up"></p></button>
+		</div>
+
+		<footer class="footer">
+			<p>© Koffi Karl</p>
+		</footer>
+		<script src="../JS/scripts.js"></script>
+		<script src="../JS/question_script.js"></script>
+	<body>
+</html>
