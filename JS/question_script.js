@@ -415,7 +415,8 @@ function display_the_end(){
 	question_creation_zone.forEach(Zone => {killChild(Zone)}); // Clean the question Zone
 
 	// Display final score
-	var para = document.createElement("p");
+	score = score <= 0 ? 0 : score;
+	var para = document.createElement("section");
 	var desc = document.createTextNode(`Score final: ${score}/${question_list.length}`);
 	para.appendChild(desc);
 	question_desc_zone.appendChild(para);
@@ -530,7 +531,6 @@ function QROC_correction(){
 
 	return points
 }
-
 
 
 
