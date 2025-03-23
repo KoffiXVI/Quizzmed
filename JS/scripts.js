@@ -1,3 +1,5 @@
+// Most of this code is supposed to be implemented at a later date. it is inherited from my portfolio project
+
 // Get all toggle buttons
 const toggleButtons = document.querySelectorAll('.toggle_button');
 
